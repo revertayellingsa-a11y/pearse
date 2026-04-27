@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: var(--bg-base);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-bg-button: var(--bg-button);
+  --color-bg-button-hover: var(--bg-button-hover);
+  --color-bg-input: var(--bg-input);
+  --color-bg-sidebar: var(--bg-sidebar);
+  --color-bg-sidebar-hover: var(--bg-sidebar-hover);
+  --color-bg-modal: var(--bg-modal);
+  --color-bg-faq: var(--bg-faq);
+  --color-bg-connect: var(--bg-connect);
+  --color-bg-connect-hover: var(--bg-connect-hover);
+
+  --color-border-main: var(--border-main);
+  --color-border-card: var(--border-card);
+  --color-border-modal: var(--border-modal);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-quaternary: var(--text-quaternary);
+  --color-text-muted: var(--text-muted);
+  --color-text-connect: var(--text-connect);
+}
+
+@layer base {
+  :root {
+    --bg-base: #f3f4f6;
+    --bg-surface: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f9fafb;
+    --bg-button: #e5e7eb;
+    --bg-button-hover: #d1d5db;
+    --bg-input: #ffffff;
+    --bg-sidebar: #ffffff;
+    --bg-sidebar-hover: #f3f4f6;
+    --bg-modal: #ffffff;
+    --bg-faq: #f9fafb;
+    --bg-connect: #111827;
+    --bg-connect-hover: #374151;
+
+    --border-main: #d1d5db;
+    --border-card: #9ca3af;
+    --border-modal: #d1d5db;
+
+    --text-primary: #0f172a;
+    --text-secondary: #1e293b;
+    --text-tertiary: #334155;
+    --text-quaternary: #475569;
+    --text-muted: #64748b;
+    --text-connect: #ffffff;
+  }
+
+  .dark {
+    --bg-base: #000000;
+    --bg-surface: #0a0a0a;
+    --bg-card: #141414;
+    --bg-card-hover: #1a1a1a;
+    --bg-button: #1a1a1a;
+    --bg-button-hover: #2a2a2a;
+    --bg-input: #1c1c1c;
+    --bg-sidebar: #222222;
+    --bg-sidebar-hover: #333333;
+    --bg-modal: #121620;
+    --bg-faq: #1a202c;
+    --bg-connect: #333333;
+    --bg-connect-hover: #444444;
+
+    --border-main: #1f1f1f;
+    --border-card: #4d4013;
+    --border-modal: #1f2937;
+
+    --text-primary: #ffffff;
+    --text-secondary: #e5e7eb;
+    --text-tertiary: #d1d5db;
+    --text-quaternary: #9ca3af;
+    --text-muted: #6b7280;
+    --text-connect: #e5e7eb;
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #374151;
+    border-radius: 20px;
+  }
+}
